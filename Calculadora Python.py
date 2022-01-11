@@ -18,7 +18,7 @@ conta = 0
 
 operacao = int(input('Operação desejada: '))
 
-if operacao > 4:
+if (operacao > 4) or (operacao < 1):
     conta = 'Operação inexistente'
 elif operacao == 1:
     conta = 'Operação SOMA selecionada'
@@ -28,10 +28,9 @@ elif operacao == 3:
     conta = 'Operação MULTIPLICAÇÃO selecionada'
 elif operacao == 4:
     conta = 'Operação DIVISÃO selecionada'
+   
+    
 
-    
-    
-print (conta)
 valor1 = int(input('Digite o primeiro valor: '))
 valor2 = int(input('Digite o segundo valor: '))
 
@@ -44,14 +43,18 @@ try:
 except ZeroDivisionError:
     print('Impossível dividir por 0')
 
-if operacao == 1:
-    resultado = soma
-elif operacao == 2:
-    resultado = subtracao
-elif operacao == 3:
-    resultado = multiplicacao
-else:
-    resultado = divisao
+    
+
+    if operacao == 1:
+        resultado = soma
+    elif operacao == 2:
+        resultado = subtracao
+    elif operacao == 3:
+        resultado = multiplicacao
+    elif operacao == 4:
+        resultado = divisao
+
+
 
 resultado = str(resultado)
     
