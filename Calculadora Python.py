@@ -3,7 +3,7 @@
 
 # In[48]:
 
-print('''#### Calculadora Python ####
+print('''-----  Calculadora Python  -----
 
 Digite a operação desejada
 
